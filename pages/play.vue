@@ -1,15 +1,16 @@
 <template>
-    <div class="play-page">
-        <SecondNavBar />
-        <div class="top-section">
-            <CharacterStats :heroName="heroName" :selectedHero="selectedHero" :selectedSpecies="selectedSpecies"
-                :selectedUnivers="selectedUnivers" :karma="karma" :morality="morality" />
-            <NarrationPrompt :narration="narration" />
-        </div>
-        <div class="bottom-section">
-            <HeroChoices :choices="choices" @select-choice="handleChoice" />
-        </div>
+  <div class="play-page">
+    <SecondNavBar />
+    <div class="top-section">
+      <CharacterStats :heroName="heroName" :selectedHero="selectedHero" :selectedSpecies="selectedSpecies"
+        :selectedUnivers="selectedUnivers" :karma="karma" :morality="morality" />
+      <NarrationPrompt :narration="narration" />
     </div>
+    <div class="bottom-section">
+      <HeroChoices :choices="choices" @select-choice="handleChoice" />
+      <Historique :historique="historique" />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import CharacterStats from '@/components/CharacterStats.vue';
 import NarrationPrompt from '@/components/NarrationPrompt.vue';
 import HeroChoices from '@/components/HeroChoices.vue';
 import SecondNavBar from '../components/SecondNavBar.vue';
+import Historique from '@/components/Historique.vue';
 
 export default {
   name: 'PlayPage',
@@ -24,7 +26,8 @@ export default {
     CharacterStats,
     NarrationPrompt,
     HeroChoices,
-    SecondNavBar
+    SecondNavBar,
+    Historique
   },
   data() {
     return {
@@ -72,5 +75,10 @@ export default {
 
 .narration-prompt {
   flex: 2;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
 }
 </style>

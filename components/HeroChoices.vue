@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-choices">
+  <div class="hero-choices col-8">
     <h2>Choix du Héros</h2>
     <ul>
       <li v-for="choice in choices" :key="choice" @click="selectChoice(choice)">
