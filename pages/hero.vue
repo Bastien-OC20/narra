@@ -120,12 +120,12 @@ export default {
 }
 </script>
 
-<style >
+<style>
 .hero-page {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  position: relative;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
 }
 
 .hero-name {
@@ -134,64 +134,65 @@ export default {
 
 
 .selection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .selection-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
-  width: 150px;
-  margin: 1rem;
-  cursor: pointer;
-  transition: transform 0.2s;
+    width: 150px;
+    margin: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .card.selected {
-  border: 2px solid #007BFF;
+    border: 2px solid #007BFF;
 }
 
 .card-img-top {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .card-body {
-  padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 .sliders {
-    max-width: 400px;;
-  margin-top: 2rem;
+    max-width: 400px;
+    ;
+    margin-top: 2rem;
 }
 
 .slider-container {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 input[type="range"] {
-  width: 100%;
+    width: 100%;
 }
 
 .univers {
-  margin-top: 2rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

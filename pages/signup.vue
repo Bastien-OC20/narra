@@ -1,7 +1,7 @@
 <template>
-    
+
     <div class="signup-page">
-        
+
         <h1>Inscription</h1>
         <form @submit.prevent="signup">
             <div>
@@ -41,7 +41,7 @@ export default {
 }
 </script>
 
-<style >
+<style>
 .signup-page {
     max-width: 400px;
     margin: 0 auto;

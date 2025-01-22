@@ -30,12 +30,12 @@ export default {
     handleMouseMove(event) {
       const logo = event.currentTarget.querySelector('.logo');
       const rect = logo.getBoundingClientRect();
-      const x = event.clientX - rect.left; 
-      const y = event.clientY - rect.top;  
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
-      const rotateY = ((x - centerX) / centerX) * 15; 
-      const rotateX = ((centerY - y) / centerY) * 15; 
+      const rotateY = ((x - centerX) / centerX) * 15;
+      const rotateX = ((centerY - y) / centerY) * 15;
       logo.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
     },
     resetTransform(event) {
@@ -47,8 +47,6 @@ export default {
 </script>
 
 <style>
-
-
 .Homepage {
 
   font-weight: 400;
@@ -59,7 +57,7 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  height : 100vh;
+  height: 100vh;
 }
 
 .logo-container {

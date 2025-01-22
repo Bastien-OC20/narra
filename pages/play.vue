@@ -44,7 +44,7 @@ export default {
   methods: {
     handleChoice(choice) {
       console.log('Choix du Héros:', choice);
-      // Logique pour gérer le choix du héros
+      this.historique.push(`Choix: ${choice}`);
     }
   }
 }

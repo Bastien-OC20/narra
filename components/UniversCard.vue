@@ -31,11 +31,11 @@ export default {
 }
 </script>
 
-<style >
+<style>
 .card {
-    display: flex;
-    justify-content: center;
-width: 150px;
+  display: flex;
+  justify-content: center;
+  width: 150px;
   margin: 1rem;
   cursor: pointer;
   transition: transform 0.2s;

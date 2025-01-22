@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style >
+<style>
 .login-page {
     max-width: 400px;
     margin: 0 auto;
