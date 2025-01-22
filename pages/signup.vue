@@ -1,4 +1,3 @@
-E:/Simplon/NarraRealms/narra-realms/pages/signup.vue
 <template>
     
     <div class="signup-page">
