@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+html, body {
+    font-family: 'Metal Mania', cursive;
+    background: linear-gradient(126deg, rgb(167, 97, 51) 0%, rgb(55, 78, 163) 100%);
+    color: white;
+}
