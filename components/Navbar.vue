@@ -8,8 +8,16 @@
         <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="/login"><button class="btn btn-primary">Connexion</button></a></li>
-        <li class="nav-item"><a class="nav-link" href="/signup"><button class="btn btn-primary">Inscription</button></a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login"
+            ><button class="btn btn-light">Connexion</button></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup"
+            ><button class="btn btn-light">Inscription</button></a
+          >
+        </li>
       </ul>
     </nav>
   </header>
@@ -17,11 +25,11 @@
 
 <script>
 export default {
-  name: 'Navbar'
-}
+  name: "Navbar",
+};
 </script>
 
-<style >
+<style>
 .header {
   color: white;
 }
