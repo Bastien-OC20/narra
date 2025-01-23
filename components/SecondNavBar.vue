@@ -39,7 +39,7 @@ export default {
 }
 
 .logo {
-  width: 20%;
+  width: 200px;
   height: auto;
 }
 

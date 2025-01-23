@@ -28,9 +28,10 @@ export default {
   },
   computed: {
     sliderBackgroundColor() {
-      const green = Math.floor((this.karma / 100) * 255);
-      const red = 255 - green;
-      return `linear-gradient(to right, rgb(${red}, ${green}, 0), rgb(${red}, ${green}, 0))`;
+      const green = Math.floor((this.karma / 100) * 165);
+      const red = 255;
+      const blue = 0;
+      return `linear-gradient(to right, rgb(${red}, 0 , ${blue}), rgb(${red}, ${green}, ${blue}))`;
     },
   },
   methods: {
@@ -63,16 +64,16 @@ export default {
 .slider-container input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #6670c9;
   cursor: pointer;
 }
 
 .slider-container input[type="range"]::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #6670c9;
   cursor: pointer;

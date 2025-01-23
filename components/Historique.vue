@@ -1,24 +1,26 @@
 <template>
-  <div class="historique col-4">
+  <div class="col-4">
     <h2>Historique</h2>
-    <ul>
-      <li v-for="(entry, index) in historique" :key="index">
-        {{ entry }}
-      </li>
-    </ul>
+    <div class="historique">
+      <ul>
+        <li v-for="(entry, index) in historique" :key="index">
+          {{ entry }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Historique',
+  name: "Historique",
   props: {
     historique: {
       type: Array,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 
 <style scoped>
