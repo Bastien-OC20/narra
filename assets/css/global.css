@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 
+@font-face {
+    font-family: 'Metal Mania';
+    src: url('/fonts/MetalMania_Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     font-family: 'Metal Mania', cursive;
     background: linear-gradient(126deg, rgb(167, 97, 51) 0%, rgb(55, 78, 163) 100%);
