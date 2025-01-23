@@ -30,7 +30,8 @@ export default {
     sliderBackgroundColor() {
       const green = Math.floor((this.morality / 100) * 255);
       const red = 255 - green;
-      return `linear-gradient(to right, rgb(${red}, ${green}, 0), rgb(${red}, ${green}, 0))`;
+      const purple = 75;
+      return `linear-gradient(to right, rgb(${purple}, 0, ${red}), rgb(0, ${green}, 0))`;
     },
   },
   methods: {
@@ -53,7 +54,7 @@ export default {
   width: 100%;
   height: 8px;
   border-radius: 5px;
-  background: #d3d3d3;
+  background: #fffefe;
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
@@ -63,18 +64,18 @@ export default {
 .slider-container input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: #6670c9;
+  background: #ffffff;
   cursor: pointer;
 }
 
 .slider-container input[type="range"]::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: #6670c9;
+  background: #ffffff;
   cursor: pointer;
 }
 </style>

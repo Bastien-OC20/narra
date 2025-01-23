@@ -1,27 +1,29 @@
 <template>
-    <div class="character-stats col-6">
-        <h2>Statistiques du Personnage</h2>
-        <p>Nom du Héros {{ heroName }}, Classe {{ selectedHero }}, Espèce {{ selectedSpecies }}</p>
-        <p>Karma : {{ karma }} et Moralité : {{ morality }}</p>
-        <div class="stat">
-            <label>Endurance :</label>
-            <div class="progress-bar col-4">
-                <div class="progress" :style="{ width: stamina + '%' }"></div>
-            </div>
-        </div>
-        <div class="stat">
-            <label>Défense :</label>
-            <div class="progress-bar col-4">
-                <div class="progress" :style="{ width: def + '%' }"></div>
-            </div>
-        </div>
-        <div class="stat" v-if="selectedHero === 'Mage'">
-            <label>Mana :</label>
-            <div class="progress-bar col-4">
-                <div class="progress" :style="{ width: mana + '%' }"></div>
-            </div>
-        </div>
+  <div class="character-stats">
+    <h2>Statistiques du Personnage</h2>
+    <p>
+      Nom du Héros {{ heroName }}, Classe {{ selectedHero }}, Espèce {{ selectedSpecies }}
+    </p>
+    <p>Karma : {{ karma }} et Moralité : {{ morality }}</p>
+    <div class="stat col-6">
+      <label>Endurance :</label>
+      <div class="progress-bar">
+        <div class="progress" :style="{ width: stamina + '%' }"></div>
+      </div>
     </div>
+    <div class="stat col-6">
+      <label>Défense :</label>
+      <div class="progress-bar">
+        <div class="progress" :style="{ width: def + '%' }"></div>
+      </div>
+    </div>
+    <div class="stat col-6" v-if="selectedHero === 'Mage'">
+      <label>Mana :</label>
+      <div class="progress-bar">
+        <div class="progress" :style="{ width: mana + '%' }"></div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -35,9 +37,9 @@ export default {
     morality: Number,
     stamina: Number,
     def: Number,
-    mana: Number
-  }
-}
+    mana: Number,
+  },
+};
 </script>
 
 <style scoped>
